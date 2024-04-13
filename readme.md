@@ -14,3 +14,7 @@ Writing Marketing Articles today...
 
 Use the ring-* utilities to apply solid box-shadow of a specific thickness to an element. Rings are a semi-transparent blue color by default, similar to the default focus ring style in many systems.
 https://tailwindcss.com/docs/ring-width
+
+AnimatePresence
+Animate components when they're removed from the React tree.
+https://www.framer.com/motion/animate-presence/
