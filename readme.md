@@ -15,3 +15,59 @@ https://tailwindcss.com/docs/ring-width
 AnimatePresence
 Animate components when they're removed from the React tree.
 https://www.framer.com/motion/animate-presence/
+
+transitionProvider
+https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_auto
+the division will be centred due to margin:auto;
+
+w-fit
+width:fit-content;
+https://developer.mozilla.org/en-US/play
+
+vscode text wrap
+press ALT + Z Key
+
+<motion.div
+            variants={topVariants}
+            animate={open ? "opened" : "closed"}
+            className="w-10 h-1 bg-black rounded origin-left"
+          ></motion.div>
+          <motion.div
+            variants={centerVariants}
+            animate={open ? "opened" : "closed"}
+            className="w-10 h-1 bg-black rounded"
+          ></motion.div>
+          <motion.div
+            variants={bottomVariants}
+            animate={open ? "opened" : "closed"}
+            className="w-10 h-1 bg-black rounded origin-left"
+          >
+</motion.div>
+
+const topVariants = {
+    closed: {
+      rotate: 0,
+    },
+    opened: {
+      rotate: 45,
+      backgroundColor: "rgb(255,255,255)",
+    },
+  };
+const centerVariants = {
+    closed: {
+      opacity: 1,
+    },
+    opened: {
+      opacity: 0,
+    },
+  };
+
+const bottomVariants = {
+    closed: {
+      rotate: 0,
+    },
+    opened: {
+      rotate: -45,
+      backgroundColor: "rgb(255,255,255)",
+    },
+  };

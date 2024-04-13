@@ -2,6 +2,9 @@
 
 const { default: Link } = require("next/link");
 const { useState } = require("react");
+import Image from "next/image";
+import NavLink from "./navLink";
+import { motion } from "framer-motion";
 
 const links = [
   { url: "/", title: "Home" },
@@ -75,6 +78,45 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
+      {/* Social */}
+      <div className="hidden md:flex gap-4 w-1/3">
+        <Link href="/">
+          <Image src="/github.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="/">
+          <Image src="/dribbble.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="/">
+          <Image src="/instagram.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="/">
+          <Image src="/facebook.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="/">
+          <Image src="/pinterest.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="/">
+          <Image src="/linkedin.png" alt="" width={24} height={24} />
+        </Link>
+      </div>
+      {/* Responsive Menu */}
+      <div className="md:hidden">
+        {/* Menu Button */}
+        <button
+          className="w-10 h-8 flex flex-col justify-between z-50 relative"
+          onClick={() => {
+            setOpen((prev) => !prev);
+          }}
+        >
+          <motion.div
+            variants={topVariants}
+            animate={open ? "opened" : "closed"}
+            className="w-10 h-1 bg-black rounded origin-left"
+          ></motion.div>
+        </button>
+      </div>
     </div>
   );
 };
+
+export default Navbar;
