@@ -71,3 +71,18 @@ const bottomVariants = {
       backgroundColor: "rgb(255,255,255)",
     },
   };
+
+It's easy for display:block; to get vertical
+https://www.w3schools.com/css/css_display_visibility.asp
+
+
+<b>Remember to learn useScroll and useTransform hooks from framer-motion package!</b>
+
+By default, the div tag is considered a block-level element.
+By default, the div tag is considered a block-level element.
+By default, the div tag is considered a block-level element.
+whereas a span element is used for inline organization and styling
+whereas a span element is used for inline organization and styling
+whereas a span element is used for inline organization and styling
+
+https://blog.hubspot.com/website/block-level-elements-vs-inline-level-elements#:~:text=By%20default%2C%20the,height%20of%20the%20inner%20content.
