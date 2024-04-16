@@ -1,5 +1,6 @@
 import { DM_Sans, Inter } from "next/font/google";
 import "./globals.css";
+import TransitionProvider from "@/components/transitionProvider";
 
 // const inter = Inter({ subsets: ["latin"] });
 const font = DM_Sans({ subsets: ["latin"] });
@@ -12,7 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <TransitionProvider>{children}</TransitionProvider>
+      </body>
     </html>
   );
 }
